@@ -11,13 +11,15 @@ body {
 }
 
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-a {
+/* a {
   color: #0070f3;
   text-decoration: none;
-}
+} */
 
 a:hover {
   text-decoration: underline;
