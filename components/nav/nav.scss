@@ -1,0 +1,40 @@
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.link-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.menubar {
+  position: absolute;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.menubar-top {
+  width: 25px;
+  height: 1.5px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  transition: all 200ms ease;
+  &.toggled {
+    transform: rotate(45deg);
+    height: 2px;
+  }
+}
+.menubar-bottom {
+  width: 25px;
+  height: 1.5px;
+  background: white;
+  transform: translateY(10px);
+  position: absolute;
+  transition: all 200ms ease;
+  &.toggled {
+    transform: rotate(-45deg);
+    height: 2px;
+  }
+}
