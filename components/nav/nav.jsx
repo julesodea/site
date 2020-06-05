@@ -1,33 +1,26 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Nav() {
   const [toggled, setToggle] = useState(false);
 
-  const menuBarTop = useRef(null);
-  const menuBarBottom = useRef(null);
-
   function handleClick() {
     setToggle(!toggled);
-    if (!toggled) {
-      document.body.classList.add('overflow');
-    } else {
-      document.body.classList.remove('overflow');
-    }
+    !toggled
+      ? document.body.classList.add('overflow')
+      : document.body.classList.remove('overflow');
   }
+
   function removeToggle() {
     setToggle(false);
+    document.body.classList = '';
   }
 
   return (
     <nav className={`nav`}>
       <div className={`menubar`} onClick={handleClick}>
+        <div className={toggled ? `menubar-top toggled` : `menubar-top`} />
         <div
-          ref={menuBarTop}
-          className={toggled ? `menubar-top toggled` : `menubar-top`}
-        />
-        <div
-          ref={menuBarBottom}
           className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
         />
       </div>
@@ -52,7 +45,7 @@ export default function Nav() {
             <a onClick={removeToggle}>PAGE ONE</a>
           </Link>
           <Link href='/'>
-            <a onClick={removeToggle}>ANOTHER PAGE</a>
+            <a onClick={removeToggle}>ANOTHER PAGES</a>
           </Link>
         </ul>
       </div>
