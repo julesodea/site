@@ -1,3 +1,6 @@
+$base-color: #0f0f0f;
+$primary-font: #f3f3f3;
+
 .overflow {
   overflow: hidden !important;
 }
@@ -24,7 +27,7 @@
 .menubar-top {
   width: 25px;
   height: 1.5px;
-  background: white;
+  background: $primary-font;
   position: absolute;
   top: 0px;
   transition: all 300ms ease;
@@ -36,8 +39,8 @@
 .menubar-bottom {
   width: 25px;
   height: 1.5px;
-  background: white;
-  top: 15px;
+  background: $primary-font;
+  top: 10px;
   position: absolute;
   transition: all 300ms ease;
   &.toggled {
@@ -45,38 +48,51 @@
     top: 5px;
   }
 }
-.menu {
+.mobile-menu {
   position: absolute;
   top: 0;
   left: 0;
-  // bottom: 0;
-  // right: 0;
+  background-color: $base-color;
   width: 100%;
   height: 0%;
-  background: rgb(20, 20, 20);
-  transition: all 0.8s ease;
-  &.toggled {
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+
+  &.open {
     height: 100%;
   }
-
-  .menu-links {
-    width: 100%;
-    height: 100%;
-    display: flex;
+  ul {
+    list-style: none;
+    display: none;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    height: 0%;
     opacity: 0;
-    transition: all 0.6s ease;
-
-    a {
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-    &.toggled {
+    width: 100%;
+    &.display {
       opacity: 1;
-      // transform: translateY(-50px);
+      height: 100%;
+      display: flex;
+    }
+    .mobile-links {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      li {
+        padding: 0.4rem 0;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $primary-font;
+      font-size: 2.5rem;
+      font-weight: 700;
+
+      &:hover {
+        color: darken($primary-font, 15%);
+      }
     }
   }
 }
