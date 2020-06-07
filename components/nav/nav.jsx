@@ -34,11 +34,13 @@ export default function Nav() {
 
   return (
     <nav className={`nav`}>
-      <div className={`menubar`} onClick={handleClick}>
-        <div className={toggled ? `menubar-top toggled` : `menubar-top`} />
-        <div
-          className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
-        />
+      <div className="menu-container">
+        <div className={`menubar`} onClick={handleClick}>
+          <div className={toggled ? `menubar-top toggled` : `menubar-top`} />
+          <div
+            className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
+          />
+        </div>
       </div>
 
       <div className={`mobile-menu ${toggled ? "open" : ""}`}>
@@ -49,22 +51,22 @@ export default function Nav() {
                 <motion.li variants={item} />
                 <motion.li variants={item}>
                   <Link href="/">
-                    <a>PRODUCT</a>
+                    <a>HOME</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
                   <Link href="/page">
-                    <a>PRODUCT</a>
+                    <a>POSTS</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
-                  <Link href="/">
-                    <a>PRODUCT</a>
+                  <Link href="/contact">
+                    <a>CONTACT</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
-                  <Link href="/">
-                    <a>PRODUCT</a>
+                  <Link href="/page-two">
+                    <a>PAGE</a>
                   </Link>
                 </motion.li>
               </motion.div>

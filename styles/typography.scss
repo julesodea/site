@@ -1,0 +1,12 @@
+$base-color: #0f0f0f;
+$primary-font: #f3f3f3;
+
+.font-large {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+a {
+  color: $primary-font;
+  text-decoration: none;
+}

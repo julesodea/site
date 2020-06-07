@@ -8,11 +8,11 @@ $primary-font: #f3f3f3;
   width: 100%;
   display: flex;
   align-items: center;
+  height: 10vh;
 }
-.link-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
+.menu-container {
+  width: 95%;
+  margin: 0 auto;
 }
 .menubar {
   position: absolute;

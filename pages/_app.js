@@ -1,4 +1,6 @@
 import "../styles/global.css";
+import "../styles/typography.scss";
+
 import "../components/nav/nav.scss";
 import "../components/layout.scss";
 
