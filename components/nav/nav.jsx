@@ -40,17 +40,6 @@ export default function Nav() {
           className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
         />
       </div>
-      <ul className={`link-container`}>
-        <Link href="/">
-          <a>One</a>
-        </Link>
-        <Link href="/page">
-          <a>One</a>
-        </Link>
-        <Link href="/">
-          <a>One</a>
-        </Link>
-      </ul>
 
       <div className={`mobile-menu ${toggled ? "open" : ""}`}>
         {toggled ? (
