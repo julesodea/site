@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Nav from "./nav/nav";
+import Nav from "../nav/nav";
 import Link from "next/link";
 
 export const siteTitle = "Jules ";

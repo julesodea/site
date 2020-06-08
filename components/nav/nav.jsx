@@ -27,9 +27,9 @@ export default function Nav() {
       : document.body.classList.remove("overflow");
   }
 
-  function removeToggle() {
+  function menuClose(e) {
+    e.stopPropagation();
     setToggle(false);
-    document.body.classList = "";
   }
 
   return (
@@ -51,22 +51,22 @@ export default function Nav() {
                 <motion.li variants={item} />
                 <motion.li variants={item}>
                   <Link href="/">
-                    <a>HOME</a>
+                    <a onClick={menuClose}>HOME</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
                   <Link href="/page">
-                    <a>POSTS</a>
+                    <a onClick={menuClose}>POSTS</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
                   <Link href="/contact">
-                    <a>CONTACT</a>
+                    <a onClick={menuClose}>CONTACT</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
                   <Link href="/page-two">
-                    <a>PAGE</a>
+                    <a onClick={menuClose}>PAGES</a>
                   </Link>
                 </motion.li>
               </motion.div>

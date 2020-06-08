@@ -1,4 +1,4 @@
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/layout/layout";
 import Head from "next/head";
 
 const pageName = "Page Two";

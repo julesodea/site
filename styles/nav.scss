@@ -58,6 +58,7 @@ $primary-font: #f3f3f3;
   transition: all 0.5s;
   display: flex;
   justify-content: center;
+  z-index: 998;
 
   &.open {
     height: 100%;

@@ -1,8 +1,9 @@
 import "../styles/global.css";
 import "../styles/typography.scss";
-
-import "../components/nav/nav.scss";
-import "../components/layout.scss";
+import "../styles/layout.scss";
+import "../styles/nav.scss";
+import "../styles/posts.scss";
+import "../styles/post.scss";
 
 import { motion } from "framer-motion";
 

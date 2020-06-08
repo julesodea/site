@@ -1,0 +1,13 @@
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  .item {
+    border: 1px solid #ececec;
+    padding: 1em;
+    .link {
+      cursor: pointer;
+    }
+  }
+}
