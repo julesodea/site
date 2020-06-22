@@ -30,6 +30,9 @@ export default function Nav() {
   function menuClose(e) {
     e.stopPropagation();
     setToggle(false);
+    if (toggled) {
+      document.body.classList.remove('overflow');
+    }
   }
 
   return (
