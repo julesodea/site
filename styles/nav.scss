@@ -1,4 +1,4 @@
-$base-color: #0f0f0f;
+$base-color: #1a1a1a;
 $primary-font: #f3f3f3;
 
 .overflow {
@@ -13,9 +13,11 @@ $primary-font: #f3f3f3;
 .menu-container {
   width: 95%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 .menubar {
-  position: absolute;
+  position: relative;
   cursor: pointer;
   width: 25px;
   height: 20px;
@@ -26,7 +28,7 @@ $primary-font: #f3f3f3;
 }
 .menubar-top {
   width: 25px;
-  height: 1.5px;
+  height: 2px;
   background: $primary-font;
   position: absolute;
   top: 0px;
@@ -38,7 +40,7 @@ $primary-font: #f3f3f3;
 }
 .menubar-bottom {
   width: 25px;
-  height: 1.5px;
+  height: 2px;
   background: $primary-font;
   top: 10px;
   position: absolute;
@@ -89,7 +91,7 @@ $primary-font: #f3f3f3;
       text-decoration: none;
       color: $primary-font;
       font-size: 2.5rem;
-      font-weight: 700;
+      font-weight: 600;
 
       &:hover {
         color: darken($primary-font, 15%);

@@ -1,6 +1,6 @@
-import { useState } from "react";
-import Link from "next/link";
-import { motion } from "framer-motion";
+import { useState } from 'react';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const container = {
   hidden: { opacity: 0 },
@@ -23,8 +23,8 @@ export default function Nav() {
   function handleClick() {
     setToggle(!toggled);
     !toggled
-      ? document.body.classList.add("overflow")
-      : document.body.classList.remove("overflow");
+      ? document.body.classList.add('overflow')
+      : document.body.classList.remove('overflow');
   }
 
   function menuClose(e) {
@@ -34,38 +34,39 @@ export default function Nav() {
 
   return (
     <nav className={`nav`}>
-      <div className="menu-container">
+      <div className='menu-container'>
         <div className={`menubar`} onClick={handleClick}>
           <div className={toggled ? `menubar-top toggled` : `menubar-top`} />
           <div
             className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
           />
         </div>
+        <div>COMPANY</div>
       </div>
 
-      <div className={`mobile-menu ${toggled ? "open" : ""}`}>
+      <div className={`mobile-menu ${toggled ? 'open' : ''}`}>
         {toggled ? (
-          <ul className={`${toggled ? "display" : ""}`}>
-            <motion.div className="mobile-links">
-              <motion.div variants={container} initial="hidden" animate="show">
+          <ul className={`${toggled ? 'display' : ''}`}>
+            <motion.div className='mobile-links'>
+              <motion.div variants={container} initial='hidden' animate='show'>
                 <motion.li variants={item} />
                 <motion.li variants={item}>
-                  <Link href="/">
+                  <Link href='/'>
                     <a onClick={menuClose}>HOME</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
-                  <Link href="/page">
+                  <Link href='/page'>
                     <a onClick={menuClose}>POSTS</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
-                  <Link href="/contact">
+                  <Link href='/contact'>
                     <a onClick={menuClose}>CONTACT</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
-                  <Link href="/page-two">
+                  <Link href='/page-two'>
                     <a onClick={menuClose}>PAGES</a>
                   </Link>
                 </motion.li>
@@ -73,7 +74,7 @@ export default function Nav() {
             </motion.div>
           </ul>
         ) : (
-          ""
+          ''
         )}
       </div>
     </nav>
