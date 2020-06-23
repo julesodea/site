@@ -1,11 +1,13 @@
-import "../styles/global.css";
-import "../styles/typography.scss";
-import "../styles/layout.scss";
-import "../styles/nav.scss";
-import "../styles/posts.scss";
-import "../styles/post.scss";
+import '../styles/global.css';
+import '../styles/typography.scss';
+import '../styles/layout.scss';
+import '../styles/nav.scss';
+import '../styles/posts.scss';
+import '../styles/post.scss';
+import '../styles/section.scss';
+import '../styles/footer.scss';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 export default function App({ Component, pageProps }) {
   return (
@@ -13,6 +15,7 @@ export default function App({ Component, pageProps }) {
       exit={{ opacity: 0 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      transition={{ delay: 0.5, duration: 2 }}
     >
       <Component {...pageProps} />
     </motion.div>

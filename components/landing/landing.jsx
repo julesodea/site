@@ -1,7 +1,7 @@
 export default function Landing() {
   return (
     <section
-      className='container flex height'
+      className='container flex height landing'
       style={{ transform: `translateY(-10vh)` }}
     >
       <h1 className='title'>Welcome.</h1>
