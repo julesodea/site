@@ -15,7 +15,7 @@
       height: 100%;
       display: flex;
       align-items: center;
-      transition: all ease 0.5s;
+      transition: all ease 0.7s;
       opacity: 0;
       transform: translateY(-5%);
       &.toggled {
@@ -25,10 +25,10 @@
       .section-content-text {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
+        // padding-left: 40px;
       }
       h1 {
-        font-weight: 600;
+        font-weight: 400;
         color: rgb(46, 46, 46);
       }
       p {
@@ -54,4 +54,14 @@
       box-shadow: 1px 1px 35px 1px rgba(0, 0, 0, 0.2);
     }
   }
+}
+
+.padding-left {
+  padding-left: 60px;
+}
+.align-center {
+  justify-items: center;
+}
+.flex {
+  display: flex;
 }

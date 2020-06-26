@@ -21,6 +21,10 @@ footer {
             margin-left: 5px;
             content: '/';
           }
+          &.end::after {
+            margin-left: 5px;
+            content: '';
+          }
         }
       }
     }

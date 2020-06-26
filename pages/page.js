@@ -1,10 +1,10 @@
-import Layout, { siteTitle } from "../components/layout/layout";
-import Head from "next/head";
-import { getSortedPostsData } from "../lib/posts";
-import Link from "next/link";
-import Date from "../components/layout/date";
+import Layout, { siteTitle } from '../components/layout/layout';
+import Head from 'next/head';
+import { getSortedPostsData } from '../lib/posts';
+import Link from 'next/link';
+import Date from '../components/layout/date';
 
-const pageName = "Posts";
+const pageName = 'Posts';
 
 export default function Page({ allPostsData }) {
   return (
@@ -12,12 +12,13 @@ export default function Page({ allPostsData }) {
       <Head>
         <title>{`${siteTitle} ❘ ${pageName}`}</title>
       </Head>
-      <section className="container ">
-        <ul className="grid">
+      <section className='container vh'>
+        <h1>Glorious Posts</h1>
+        <ul className='grid'>
           {allPostsData.map(({ id, date, title }) => (
-            <Link href="/posts/[id]" as={`/posts/${id}`} key={id}>
+            <Link href='/posts/[id]' as={`/posts/${id}`} key={id}>
               <a>
-                <li className="item">
+                <li className='item'>
                   <h2>{title}</h2>
                   <br />
                   <small>

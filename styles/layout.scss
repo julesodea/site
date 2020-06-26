@@ -1,7 +1,9 @@
 .container {
   width: 95%;
   margin: 0 auto;
-
+  &.vh {
+    height: 90vh;
+  }
   &.flex {
     display: flex;
     flex-direction: column;
