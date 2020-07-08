@@ -9,9 +9,15 @@ export default function Page() {
       <Head>
         <title>{`${siteTitle} ❘ ${pageName}`}</title>
       </Head>
-      <section className='container vh'>
-        <h1>Contact</h1>
-      </section>
+      <motion.div
+        exit={{ opacity: 0 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
+        <section className='container vh'>
+          <h1>Contact</h1>
+        </section>
+      </motion.div>
     </Layout>
   );
 }

@@ -30,6 +30,7 @@ export default function Nav() {
   function menuClose(e) {
     e.stopPropagation();
     setToggle(false);
+
     if (toggled) {
       document.body.classList.remove('overflow');
     }
@@ -44,7 +45,28 @@ export default function Nav() {
             className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
           />
         </div>
-        <div>COMPANY</div>
+
+        <Link href='/'>
+          <a>JULES.</a>
+        </Link>
+
+        <ul className='web'>
+          <li>
+            <Link href='/page'>
+              <a>Posts</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/contact'>
+              <a>contact</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/page-two'>
+              <a>about</a>
+            </Link>
+          </li>
+        </ul>
       </div>
 
       <div className={`mobile-menu ${toggled ? 'open' : ''}`}>

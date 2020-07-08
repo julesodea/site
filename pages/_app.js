@@ -1,3 +1,6 @@
+import React from 'react';
+import App from 'next/app';
+
 import '../styles/global.css';
 import '../styles/typography.scss';
 import '../styles/layout.scss';
@@ -7,19 +10,18 @@ import '../styles/post.scss';
 import '../styles/section.scss';
 import '../styles/footer.scss';
 
-import { motion, AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion';
 
-export default function App({ Component, pageProps }) {
-  return (
-    <AnimatePresence exitBeforeEnter>
-      <motion.div
-        exit={{ opacity: 0 }}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 1.5 }}
-      >
-        <Component {...pageProps} />
-      </motion.div>
-    </AnimatePresence>
-  );
+class MyApp extends App {
+  render() {
+    const { Component, pageProps, router } = this.props;
+
+    return (
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} key={router.route} />
+      </AnimatePresence>
+    );
+  }
 }
+
+export default MyApp;

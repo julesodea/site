@@ -11,3 +11,14 @@ article {
     border-bottom: 0.5px solid #ececec5e;
   }
 }
+.post-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.back-button {
+  margin: 12px 0;
+}

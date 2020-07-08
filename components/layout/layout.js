@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import Nav from '../nav/nav';
 import Footer from '../footer/footer';
-import Link from 'next/link';
 
 export const siteTitle = 'Jules ';
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home, post }) {
   return (
-    <div>
+    <>
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <meta
@@ -24,19 +23,8 @@ export default function Layout({ children, home }) {
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
       <Nav />
-      <main>
-        {children}
-        <div className='container'>
-          {!home && (
-            <div>
-              <Link href='/'>
-                <a>← Back to home</a>
-              </Link>
-            </div>
-          )}
-        </div>
-      </main>
-      <Footer />
-    </div>
+      <main>{children}</main>
+      {!home ? <Footer /> : null}
+    </>
   );
 }
