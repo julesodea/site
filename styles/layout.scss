@@ -3,6 +3,9 @@
   margin: 0 auto;
   &.vh {
     height: 90vh;
+    @media only screen and (max-width: 900px) {
+      height: 100%;
+    }
   }
   &.flex {
     display: flex;
