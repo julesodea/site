@@ -7,6 +7,10 @@
       height: 100%;
     }
   }
+  h1 {
+    font-weight: 600;
+    padding: 1rem 0;
+  }
   &.flex {
     display: flex;
     flex-direction: column;
