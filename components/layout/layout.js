@@ -24,7 +24,7 @@ export default function Layout({ children, home, post }) {
       </Head>
       <Nav />
       <main>{children}</main>
-      {!home ? <Footer /> : null}
+      {/* {!home ? <Footer /> : null} */}
     </>
   );
 }
