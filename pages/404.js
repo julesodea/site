@@ -9,19 +9,21 @@ export default function Custom404() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <h1
+        <div
           style={{
-            height: `90vh`,
+            height: `80vh`,
             display: `flex`,
             justifyContent: `center`,
+            flexDirection: `column`,
             alignItems: `center`,
+            transform: `translateY(-20px)`,
           }}
         >
-          404: Page Not Found
-        </h1>
-        <Link href='/'>
-          <a>Back to safety</a>
-        </Link>
+          <h1>404: Page Not Found </h1>
+          <Link href='/'>
+            <a>Back to safety</a>
+          </Link>
+        </div>
       </motion.div>
     </Layout>
   );

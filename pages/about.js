@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const pageName = 'Page Two';
 
-export default function Page() {
+export default function About() {
   return (
     <Layout>
       <Head>
@@ -16,7 +16,7 @@ export default function Page() {
         animate={{ opacity: 1 }}
       >
         <section className='container vh'>
-          <h1>Page two</h1>
+          <h1>General</h1>
         </section>
       </motion.div>
     </Layout>

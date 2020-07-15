@@ -62,7 +62,7 @@ export default function Nav() {
             </Link>
           </li>
           <li>
-            <Link href='/page-two'>
+            <Link href='/about'>
               <a>about</a>
             </Link>
           </li>
