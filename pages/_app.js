@@ -9,6 +9,7 @@ import '../styles/posts.scss';
 import '../styles/post.scss';
 import '../styles/section.scss';
 import '../styles/footer.scss';
+import '../styles/about.scss';
 
 import { AnimatePresence } from 'framer-motion';
 

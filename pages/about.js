@@ -17,6 +17,35 @@ export default function About() {
       >
         <section className='container vh'>
           <h1>General</h1>
+          <div className='scrolling-wrapper'>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+            <div className='card'>
+              <h2>Card</h2>
+            </div>
+          </div>
         </section>
       </motion.div>
     </Layout>
