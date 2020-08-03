@@ -39,12 +39,12 @@ export default function Nav() {
   return (
     <nav className={`nav`}>
       <div className='menu-container'>
-        <div className={`menubar`} onClick={handleClick}>
+        <button className={`menubar`} onClick={handleClick} tabIndex='1'>
           <div className={toggled ? `menubar-top toggled` : `menubar-top`} />
           <div
             className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
           />
-        </div>
+        </button>
 
         <Link href='/'>
           <a>JULES.</a>

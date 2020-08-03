@@ -20,30 +20,39 @@ export default function About() {
           <div className='scrolling-wrapper'>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
             <div className='card'>
               <h2>Card</h2>
+              <p>this is a example card</p>
             </div>
           </div>
         </section>
