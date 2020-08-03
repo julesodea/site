@@ -39,7 +39,7 @@ export default function Nav() {
   return (
     <nav className={`nav`}>
       <div className='menu-container'>
-        <button className={`menubar`} onClick={handleClick} tabIndex='1'>
+        <button className={`menubar`} onClick={handleClick} tabIndex='0'>
           <div className={toggled ? `menubar-top toggled` : `menubar-top`} />
           <div
             className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
