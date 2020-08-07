@@ -22,12 +22,19 @@ $primary-font: #f3f3f3;
   background: transparent;
   border: none;
   cursor: pointer;
+  outline: none;
   width: 25px;
   height: 20px;
   z-index: 999;
   &:hover {
     opacity: 0.9;
   }
+  &:focus {
+    > * {
+      background: rgb(185, 185, 185);
+    }
+  }
+
   @media only screen and (min-width: 900px) {
     display: none;
   }
