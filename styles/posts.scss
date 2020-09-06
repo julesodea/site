@@ -1,13 +1,13 @@
 .grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: 1em;
   h1 {
     font-weight: 600;
   }
   .item {
-    border: 1px solid #ececec;
+    border: 1px solid #808080;
     padding: 1em;
     transition: transform 0.3s ease;
     &:hover {

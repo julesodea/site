@@ -1,5 +1,5 @@
 .container {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
   &.vh {
     height: 90vh;
@@ -9,14 +9,12 @@
   }
   h1 {
     font-weight: 600;
-    padding: 1rem 0;
   }
   &.flex {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    
   }
 }
 .landing {

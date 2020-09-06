@@ -1,5 +1,5 @@
-$base-color: #1a1a1a;
-$primary-font: #f3f3f3;
+$base-color: #eeeeee;
+$primary-font: #252525;
 
 .overflow {
   overflow: hidden !important;
@@ -11,7 +11,7 @@ $primary-font: #f3f3f3;
   height: 10vh;
 }
 .menu-container {
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -31,7 +31,7 @@ $primary-font: #f3f3f3;
   }
   &:focus {
     > * {
-      background: rgb(185, 185, 185);
+      background: rgb(48, 48, 48);
     }
   }
 
@@ -121,8 +121,9 @@ ul.web {
     a {
       text-transform: uppercase;
       font-size: 15px;
+      transition: all 200ms ease;
       &:hover {
-        color: rgb(228, 228, 228);
+        color: rgb(133, 133, 133);
       }
     }
   }

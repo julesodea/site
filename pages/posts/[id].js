@@ -23,6 +23,7 @@ export default function Post({ postData }) {
               className='content'
               dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
             />
+            <img src={postData.img} alt='img' />
           </article>
           <div className='back-button'>
             <Link href='/page'>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Landing() {
   return (
     <section
@@ -6,6 +8,9 @@ export default function Landing() {
     >
       <h1 className='title'>Welcome.</h1>
       <p className='subtitle'>I am creating a new website.</p>
+      <Link href='/page'>
+        <a className='landing-button'>See More</a>
+      </Link>
     </section>
   );
 }

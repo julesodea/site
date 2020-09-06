@@ -39,16 +39,15 @@ export default function Nav() {
   return (
     <nav className={`nav`}>
       <div className='menu-container'>
+        <Link href='/'>
+          <a>JULES.</a>
+        </Link>
         <button className={`menubar`} onClick={handleClick} tabIndex='0'>
           <div className={toggled ? `menubar-top toggled` : `menubar-top`} />
           <div
             className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
           />
         </button>
-
-        <Link href='/'>
-          <a>JULES.</a>
-        </Link>
 
         <ul className='web'>
           <li>
@@ -61,11 +60,11 @@ export default function Nav() {
               <a>contact</a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/about'>
               <a>about</a>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
 
