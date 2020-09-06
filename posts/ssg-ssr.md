@@ -1,5 +1,6 @@
 ---
 title: 'Second Post'
+subtitle: 'This is the subtitle'
 date: '2020-01-02'
 img: '../images/img.jpg'
 ---

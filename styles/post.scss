@@ -1,7 +1,15 @@
 article {
   h1 {
+    font-size: 2rem;
     font-weight: 800;
     border-bottom: 0.5px solid #ececec5e;
+    @media only screen and (max-width: 600px) {
+      font-size: 1.4rem;
+    }
+  }
+  h5 {
+    font-weight: 600;
+    color: rgb(73, 73, 73);
   }
   .date {
     font-size: 0.8em;

@@ -1,5 +1,6 @@
 ---
 title: 'Movies API'
+subtitle: 'This is the subtitle'
 date: '2020-02-02'
 img: '../images/img.jpg'
 ---

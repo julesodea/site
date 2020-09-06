@@ -1,5 +1,6 @@
 ---
 title: 'Stripe Payment eCommerce Site'
+subtitle: 'This is the subtitle'
 date: '2020-06-02'
 img: '../images/img.jpg'
 ---

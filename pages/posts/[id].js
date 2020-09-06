@@ -17,6 +17,7 @@ export default function Post({ postData }) {
       >
         <div className='container post-container'>
           <article>
+            <h5>{postData.subtitle}</h5>
             <h1>{postData.title}</h1>
 
             <div

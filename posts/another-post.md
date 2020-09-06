@@ -1,5 +1,6 @@
 ---
 title: 'Noted Notepad'
+subtitle: 'This is the subtitle'
 date: '2020-03-02'
 img: '../images/img.jpg'
 ---

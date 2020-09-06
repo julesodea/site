@@ -1,5 +1,6 @@
 ---
 title: 'Black Estate Redesign'
+subtitle: 'This is the subtitle'
 date: '2020-05-02'
 img: '../images/img.jpg'
 ---
