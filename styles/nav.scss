@@ -16,6 +16,9 @@ $primary-font: #252525;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (max-width: 900px) {
+    width: 95%;
+  }
 }
 .menubar {
   position: relative;

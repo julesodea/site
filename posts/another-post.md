@@ -1,5 +1,5 @@
 ---
-title: 'Another Post'
+title: 'Noted Notepad'
 date: '2020-03-02'
 img: '../images/img.jpg'
 ---

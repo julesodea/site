@@ -1,5 +1,5 @@
 ---
-title: 'Posty Post'
+title: 'Black Estate Redesign'
 date: '2020-05-02'
 img: '../images/img.jpg'
 ---

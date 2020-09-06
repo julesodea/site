@@ -19,7 +19,7 @@ export default function Page({ allPostsData }) {
         animate={{ opacity: 1 }}
       >
         <section className='container vh'>
-          <h1>Glorious Posts</h1>
+          <h1>Projects</h1>
           <ul className='grid'>
             {allPostsData.map(({ id, title }) => (
               <Link href='/posts/[id]' as={`/posts/${id}`} key={id}>

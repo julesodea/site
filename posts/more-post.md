@@ -1,5 +1,5 @@
 ---
-title: 'More Post'
+title: 'Movies API'
 date: '2020-02-02'
 img: '../images/img.jpg'
 ---
