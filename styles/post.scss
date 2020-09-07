@@ -11,8 +11,29 @@ article {
     font-weight: 600;
     color: rgb(73, 73, 73);
   }
+  p {
+    margin: 40px 0;
+  }
   .date {
     font-size: 0.8em;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    a {
+      background: rgb(36, 36, 36);
+      border-radius: 5px;
+      margin: 0 10px;
+      padding: 5px 10px;
+      color: rgb(243, 243, 243);
+      font-weight: 400;
+      font-size: 14px;
+    }
+    a:first-child {
+      margin-left: 0px;
+      background: rgb(255, 255, 255);
+      color: rgb(36, 36, 36);
+    }
   }
   .content {
     padding: 1em 0;

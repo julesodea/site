@@ -8,18 +8,29 @@
     font-weight: 600;
   }
   .item {
-    background: rgb(248, 248, 248);
-    padding: 1em;
+    background: rgb(255, 255, 255);
     transition: transform 0.3s ease;
     border-radius: 5px;
+
+    height: 440px;
     &:hover {
       transform: scale(1.0075);
     }
     h2 {
       font-weight: 600;
+      padding: 10px 10px 0px;
+    }
+    h5 {
+      font-weight: 400;
+      padding: 10px;
     }
     .link {
       cursor: pointer;
+    }
+    img {
+      height: 300px;
+      border-radius: 5px 5px 0px 0px;
+      width: 100%;
     }
   }
 }

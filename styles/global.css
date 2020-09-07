@@ -23,3 +23,14 @@ img {
 ul {
   list-style: none;
 }
+button {
+  background: rgb(36, 36, 36);
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: rgb(243, 243, 243);
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}

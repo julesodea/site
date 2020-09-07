@@ -21,12 +21,13 @@ export default function Page({ allPostsData }) {
         <section className='container vh'>
           <h1>Projects</h1>
           <ul className='grid'>
-            {allPostsData.map(({ id, title }) => (
+            {allPostsData.map(({ id, title, featuredImage, subtitle }) => (
               <Link href='/posts/[id]' as={`/posts/${id}`} key={id}>
                 <a>
                   <li className='item'>
+                    <img src={featuredImage} alt='' />
                     <h2>{title}</h2>
-                    <br />
+                    <h5>{subtitle}</h5>
                   </li>
                 </a>
               </Link>

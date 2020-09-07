@@ -19,12 +19,18 @@ export default function Post({ postData }) {
           <article>
             <h5>{postData.subtitle}</h5>
             <h1>{postData.title}</h1>
+            <div className='links'>
+              <a href={postData.link} target='__blank' rel='noopener'>
+                DEMO
+              </a>
+              <a href={postData.link2} target='__blank' rel='noopener'>
+                MORE
+              </a>
+            </div>
 
-            <div
-              className='content'
-              dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-            />
-            <img src={postData.img} alt='img' />
+            <p>{postData.summaryone}</p>
+            <img src={postData.featuredImage} alt='img' />
+            <p>{postData.summarytwo}</p>
           </article>
           <div className='back-button'>
             <Link href='/page'>
