@@ -1,7 +1,7 @@
 ---
 path: '/jponz-live'
 date: '2019-06-16'
-title: 'eCOMMERCE REACT & REDUX'
+title: 'eCommerce React Store'
 subtitle: 'Enterprise level React application with online store functionality'
 author: 'odea'
 featuredImage: ../images/react.png

@@ -28,14 +28,15 @@ a.landing-button {
   margin: 20px 0;
   background: rgb(46, 46, 46);
   outline: none;
-  color: rgb(228, 228, 228);
+  color: rgb(216, 216, 216);
   border-radius: 5px;
   padding: 8px 18px;
-  transition: all 250ms ease;
+  transition: all 150ms ease;
   &:hover {
     background: white;
-    color: black;
-    box-shadow: 1px 4px 25px 2px rgba(0, 0, 0, 0.103);
+    color: rgb(17, 17, 17);
+    box-shadow: 1px 4px 10px 2px rgba(0, 0, 0, 0.08);
+    transform: translateY(-1px);
   }
 }
 // .padding-left {

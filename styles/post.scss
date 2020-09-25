@@ -1,13 +1,15 @@
 article {
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 800;
-    border-bottom: 0.5px solid #ececec5e;
     @media only screen and (max-width: 600px) {
       font-size: 1.4rem;
     }
   }
   h5 {
+    width: max-content;
+    border-bottom: 2px solid rgba(202, 202, 202, 0.623);
+    padding-bottom: 5px;
     font-weight: 600;
     color: rgb(73, 73, 73);
   }
@@ -24,15 +26,22 @@ article {
       background: rgb(36, 36, 36);
       border-radius: 5px;
       margin: 0 10px;
-      padding: 5px 10px;
+      padding: 9px 18px;
       color: rgb(243, 243, 243);
       font-weight: 400;
       font-size: 14px;
+      transition: all 150ms ease;
+      &:hover {
+        box-shadow: 1px 4px 10px 2px rgba(0, 0, 0, 0.08);
+      }
     }
     a:first-child {
       margin-left: 0px;
       background: rgb(255, 255, 255);
       color: rgb(36, 36, 36);
+      &:hover {
+        box-shadow: 1px 4px 10px 2px rgba(0, 0, 0, 0.02);
+      }
     }
   }
   .content {

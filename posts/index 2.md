@@ -1,7 +1,7 @@
 ---
 path: "/black-estate"
 date: "2019-06-17"
-title: "BLACK ESTATE"
+title: "Black Estate"
 subtitle: "Redesign of a established Canterbury culinary icon in New Zealand"
 author: "odea"
 featuredImage: ../images/blackestate.jpg

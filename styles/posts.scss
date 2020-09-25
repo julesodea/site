@@ -2,7 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-gap: 1em;
+  grid-gap: 40px;
   margin-top: 40px;
   h1 {
     font-weight: 600;
@@ -12,17 +12,16 @@
     transition: transform 0.3s ease;
     border-radius: 5px;
 
-    height: 440px;
     &:hover {
       transform: scale(1.0075);
     }
     h2 {
       font-weight: 600;
-      padding: 10px 10px 0px;
+      padding: 10px 0px 0px 20px;
     }
     h5 {
       font-weight: 400;
-      padding: 10px;
+      padding: 5px 0px 20px 20px;
     }
     .link {
       cursor: pointer;
