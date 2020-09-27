@@ -11,9 +11,13 @@
     background: rgb(255, 255, 255);
     transition: transform 0.3s ease;
     border-radius: 5px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
     &:hover {
-      transform: scale(1.0075);
+      transform: scale(1.005);
+      box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
     }
     h2 {
       font-weight: 600;

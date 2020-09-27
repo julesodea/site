@@ -58,7 +58,7 @@ export default function Section() {
                 tenetur neque ducimus eum.
               </p>
               <div>
-                <Link href='/page'>
+                <Link href='/projects'>
                   <a>See case study</a>
                 </Link>
               </div>

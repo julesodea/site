@@ -32,15 +32,19 @@ article {
       font-size: 14px;
       transition: all 150ms ease;
       &:hover {
-        box-shadow: 1px 4px 10px 2px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
     }
     a:first-child {
       margin-left: 0px;
-      background: rgb(255, 255, 255);
+      background: rgb(250, 250, 250);
       color: rgb(36, 36, 36);
+      box-shadow: 0 2px 10px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
       &:hover {
-        box-shadow: 1px 4px 10px 2px rgba(0, 0, 0, 0.02);
+        box-shadow: 0 10px 10px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
     }
   }

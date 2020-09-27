@@ -51,7 +51,7 @@ export default function Nav() {
 
         <ul className='web'>
           <li>
-            <Link href='/page'>
+            <Link href='/projects'>
               <a>Posts</a>
             </Link>
           </li>
@@ -80,18 +80,13 @@ export default function Nav() {
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
-                  <Link href='/page'>
+                  <Link href='/projects'>
                     <a onClick={menuClose}>POSTS</a>
                   </Link>
                 </motion.li>
                 <motion.li variants={item}>
                   <Link href='/contact'>
                     <a onClick={menuClose}>CONTACT</a>
-                  </Link>
-                </motion.li>
-                <motion.li variants={item}>
-                  <Link href='/page-two'>
-                    <a onClick={menuClose}>PAGES</a>
                   </Link>
                 </motion.li>
               </motion.div>

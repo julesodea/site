@@ -21,7 +21,7 @@ export default function Post({ postData }) {
             <h1>{postData.title}</h1>
             <div className='links'>
               <div className='back-button'>
-                <Link href='/page'>
+                <Link href='/projects'>
                   <a>← Back to posts</a>
                 </Link>
               </div>
@@ -38,7 +38,7 @@ export default function Post({ postData }) {
             <p>{postData.summarytwo}</p>
           </article>
           <div className='back-button'>
-            <Link href='/page'>
+            <Link href='/projects'>
               <a>← Back to posts</a>
             </Link>
           </div>
