@@ -12,7 +12,7 @@ export default function Landing() {
         with yet.
       </p>
       <Link href='/projects'>
-        <a className='landing-button'>See More</a>
+        <a className='landing-button'>Recent Work</a>
       </Link>
     </section>
   );
