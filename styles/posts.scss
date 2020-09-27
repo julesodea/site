@@ -1,3 +1,7 @@
+.subheading {
+  color: rgb(87, 87, 87);
+  font-weight: 400;
+}
 .grid {
   position: relative;
   display: grid;
@@ -7,6 +11,7 @@
   h1 {
     font-weight: 600;
   }
+
   .item {
     background: rgb(255, 255, 255);
     transition: transform 0.3s ease;
@@ -27,6 +32,7 @@
       font-weight: 400;
       padding: 5px 0px 20px 20px;
     }
+
     .link {
       cursor: pointer;
     }

@@ -23,9 +23,11 @@ img {
   max-width: 100%;
   display: block;
 }
+
 ul {
   list-style: none;
 }
+
 button {
   background: rgb(36, 36, 36);
   border-radius: 5px;

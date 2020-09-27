@@ -17,7 +17,7 @@ export default function Post({ postData }) {
       >
         <div className='container post-container'>
           <article>
-            <h5>{postData.subtitle}</h5>
+            <h4>{postData.subtitle}</h4>
             <h1>{postData.title}</h1>
             <div className='links'>
               <div className='back-button'>
@@ -34,7 +34,7 @@ export default function Post({ postData }) {
             </div>
 
             <p>{postData.summaryone}</p>
-            <img src={postData.featuredImage} alt='img' />
+            <img src={postData.featuredImage} alt={postData.title} />
             <p>{postData.summarytwo}</p>
           </article>
           <div className='back-button'>
