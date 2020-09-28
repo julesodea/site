@@ -20,11 +20,10 @@ export default function Post({ postData }) {
             <h4>{postData.subtitle}</h4>
             <h1>{postData.title}</h1>
             <div className='links'>
-              <div className='back-button'>
-                <Link href='/projects'>
-                  <a>← Back to posts</a>
-                </Link>
-              </div>
+              <Link href='/projects'>
+                <a>← Back to posts</a>
+              </Link>
+
               <a href={postData.link} target='__blank' rel='noopener'>
                 DEMO
               </a>

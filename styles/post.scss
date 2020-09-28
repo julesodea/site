@@ -12,6 +12,11 @@ article {
     padding-bottom: 5px;
     font-weight: 400;
     color: rgb(73, 73, 73);
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      font-size: 14px;
+      border-bottom: none;
+    }
   }
   p {
     margin: 40px 0;
@@ -21,31 +26,40 @@ article {
   }
   .links {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     a {
       background: rgb(36, 36, 36);
       border-radius: 5px;
-      margin: 0 10px;
-      padding: 9px 18px;
+      margin: 10px 10px 0 0;
+      padding: 8px 18px;
       color: rgb(243, 243, 243);
       font-weight: 400;
       font-size: 14px;
       transition: all 150ms ease;
+      border: 1px solid rgb(46, 46, 46);
       &:hover {
         box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1),
           0 4px 6px -2px rgba(0, 0, 0, 0.05);
         color: rgb(36, 36, 36);
         background: rgb(255, 255, 255);
+        font-weight: 600;
       }
     }
     a:first-child {
+      width: 150px;
       margin-left: 0px;
       background: none;
       color: rgb(36, 36, 36);
-      padding-left: 0px;
-      font-weight: 600;
+      border: 1px solid rgb(36, 36, 36);
+      font-weight: 400;
       &:hover {
-        box-shadow: none;
+        box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        font-weight: 600;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 140px;
       }
     }
   }
