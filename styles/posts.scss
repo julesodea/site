@@ -6,12 +6,11 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 40px;
+  grid-gap: 60px;
   margin-top: 40px;
   h1 {
     font-weight: 600;
   }
-
   .item {
     background: rgb(255, 255, 255);
     transition: transform 0.3s ease;
