@@ -6,7 +6,7 @@ export default function Landing() {
       className='container flex height landing'
       style={{ transform: `translateY(-10vh)` }}
     >
-      <h1 className='title'>Hello!</h1>
+      <h1 className='title'>Hello! I'm Jules.</h1>
       <p className='subtitle'>
         I am creating a new website. This is a small blurb I haven't come up
         with yet.
