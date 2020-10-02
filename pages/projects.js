@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { motion } from 'framer-motion';
 
-const pageName = 'Posts';
+const pageName = 'Projects';
 
 export default function Page({ allPostsData }) {
   return (

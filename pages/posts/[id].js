@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
-import Layout from '../../components/layout/layout';
+import Layout, { siteTitle } from '../../components/layout/layout';
 import { motion } from 'framer-motion';
 
 export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{`${siteTitle} ❘ Projects - ${postData.title}`}</title>
       </Head>
       <motion.div
         exit={{ opacity: 0 }}
