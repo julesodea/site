@@ -1,5 +1,5 @@
 .container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   @media only screen and (max-width: 900px) {
     width: 95%;
@@ -11,7 +11,9 @@
     }
   }
   h1 {
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: rgb(43, 43, 43);
   }
   &.flex {
     display: flex;
