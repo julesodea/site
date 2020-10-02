@@ -21,7 +21,7 @@ export default function Post({ postData }) {
             <h1>{postData.title}</h1>
             <div className='links'>
               <Link href='/projects'>
-                <a>← Back to posts</a>
+                <a className='back-button'>← Back to posts</a>
               </Link>
 
               <a href={postData.link} target='__blank' rel='noopener'>
@@ -36,9 +36,9 @@ export default function Post({ postData }) {
             <img src={postData.featuredImage} alt={postData.title} />
             <p>{postData.summarytwo}</p>
           </article>
-          <div className='back-button'>
+          <div className='links'>
             <Link href='/projects'>
-              <a>← Back to posts</a>
+              <a className='back-button'>← Back to posts</a>
             </Link>
           </div>
         </div>
