@@ -17,8 +17,10 @@ export default function Post({ postData }) {
       >
         <div className='container post-container'>
           <article>
-            <h4>{postData.subtitle}</h4>
-            <h1>{postData.title}</h1>
+            <h1 className='title'>{postData.title}</h1>
+            <h4>2018</h4>
+            <h4 className='subtitle'>{postData.subtitle}</h4>
+
             <div className='links'>
               <Link href='/projects'>
                 <a className='back-button'>← Back to posts</a>

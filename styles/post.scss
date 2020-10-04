@@ -1,17 +1,17 @@
 article {
-  h1 {
+  h1.title {
     font-size: 4rem;
     font-weight: 800;
     @media only screen and (max-width: 600px) {
-      font-size: 1.4rem;
+      font-size: 2rem;
     }
   }
   h4 {
     width: max-content;
-    border-bottom: 2px solid rgba(202, 202, 202, 0.623);
+    font-size: 0.75rem;
     padding-bottom: 5px;
-    font-weight: 400;
-    color: rgb(73, 73, 73);
+    font-weight: 600;
+    color: rgb(131, 131, 131);
     @media only screen and (max-width: 600px) {
       width: 100%;
       font-size: 14px;
