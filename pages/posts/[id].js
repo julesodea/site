@@ -3,8 +3,21 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../../components/layout/layout';
 import { motion } from 'framer-motion';
+import Menu from '../../components/menu/menu';
+import { useEffect, useState } from 'react';
 
 export default function Post({ postData }) {
+  const [scroll, setScroll] = useState(0);
+
+  useEffect(() => {
+    document.addEventListener('scroll', () => {
+      const scrollCheck = window.scrollY < 100;
+      if (scrollCheck !== scroll) {
+        setScroll(scrollCheck);
+      }
+    });
+  });
+
   return (
     <Layout>
       <Head>
@@ -44,6 +57,7 @@ export default function Post({ postData }) {
             </Link>
           </div>
         </div>
+        {/* {!scroll ? <Menu /> : null} */}
       </motion.div>
     </Layout>
   );

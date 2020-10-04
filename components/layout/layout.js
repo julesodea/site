@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Nav from '../nav/nav';
-import Footer from '../footer/footer';
 
 export const siteTitle = 'Jules ';
 

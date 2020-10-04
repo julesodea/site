@@ -22,7 +22,26 @@ export default function Page() {
       >
         <section className='container vh'>
           <h1>Contact</h1>
-          <button onClick={handleToggle}>{toggle ? 'CLOSE' : 'VIEW CV'}</button>
+          <h4>
+            Email:{'  '}
+            <a href='mailto: jules.odea@gmail.com'>jules.odea@gmail.com</a>
+          </h4>
+          <h4>
+            Github:{'  '}
+            <a href='https://github.com/julesodea'>
+              https://github.com/julesodea
+            </a>
+          </h4>
+          <h4>
+            LinkedIn:{'  '}
+            <a href='www.linkedin.com/in/julesodea'>
+              www.linkedin.com/in/julesodea
+            </a>
+          </h4>
+
+          <button className='button' onClick={handleToggle}>
+            {toggle ? 'CLOSE' : 'VIEW CV'}
+          </button>
           {toggle ? (
             <embed
               style={{ margin: '40px 0px' }}
