@@ -22,19 +22,33 @@ export default function Page() {
       >
         <section className='container vh'>
           <h1>Contact</h1>
-          <h4>
+          <h4 className='contact-title'>
             Email:{'  '}
-            <a href='mailto: jules.odea@gmail.com'>jules.odea@gmail.com</a>
+            <a
+              target='__blank'
+              rel='noreferrer'
+              href='mailto: jules.odea@gmail.com'
+            >
+              jules.odea@gmail.com
+            </a>
           </h4>
-          <h4>
+          <h4 className='contact-title'>
             Github:{'  '}
-            <a href='https://github.com/julesodea'>
+            <a
+              href='https://github.com/julesodea'
+              target='__blank'
+              rel='noreferrer'
+            >
               https://github.com/julesodea
             </a>
           </h4>
-          <h4>
+          <h4 className='contact-title'>
             LinkedIn:{'  '}
-            <a href='www.linkedin.com/in/julesodea'>
+            <a
+              href='https://linkedin.com/in/julesodea'
+              target='__blank'
+              rel='noreferrer'
+            >
               www.linkedin.com/in/julesodea
             </a>
           </h4>
