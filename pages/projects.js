@@ -26,7 +26,7 @@ export default function Page({ allPostsData }) {
               <Link href='/posts/[id]' as={`/posts/${id}`} key={id}>
                 <a>
                   <li className='item'>
-                    <img src={featuredImage} alt='' />
+                    <img src={featuredImage} alt='' loading='lazy' />
                     <h2>{title}</h2>
                     <h5>{subtitle}</h5>
                   </li>

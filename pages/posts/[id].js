@@ -46,9 +46,13 @@ export default function Post({ postData }) {
                 MORE
               </a>
             </div>
-            <h3>Outline</h3>
+            <h3>Key Points</h3>
             <p>{postData.summaryone}</p>
-            <img src={postData.featuredImage} alt={postData.title} />
+            <img
+              src={postData.featuredImage}
+              alt={postData.title}
+              loading='lazy'
+            />
             <h3>Development</h3>
             <p>{postData.summarytwo}</p>
           </article>
