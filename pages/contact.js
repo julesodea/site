@@ -13,9 +13,6 @@ export default function Page() {
   function handleToggle() {
     setToggle(!toggle);
   }
-  // if (toggle) {
-  //   document.body.height = `200000px`;
-  // }
 
   return (
     <Layout>
@@ -28,7 +25,7 @@ export default function Page() {
         animate={{ opacity: 1 }}
       >
         <section className='container vh contact'>
-          <h1>Get in contact with me.</h1>
+          <h1 className='contact-heading'>Get in contact with me.</h1>
 
           <div>
             <a
