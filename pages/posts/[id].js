@@ -46,9 +46,10 @@ export default function Post({ postData }) {
                 MORE
               </a>
             </div>
-
+            <h3>Outline</h3>
             <p>{postData.summaryone}</p>
             <img src={postData.featuredImage} alt={postData.title} />
+            <h3>Development</h3>
             <p>{postData.summarytwo}</p>
           </article>
           <div className='links'>

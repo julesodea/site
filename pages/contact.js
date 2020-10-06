@@ -2,6 +2,10 @@ import { useState } from 'react';
 import Layout, { siteTitle } from '../components/layout/layout';
 import Head from 'next/head';
 import { motion } from 'framer-motion';
+import Github from '../components/logos/github';
+import LinkedIn from '../components/logos/linkedin';
+import CV from '../components/logos/cv';
+
 const pageName = 'Contact';
 
 export default function Page() {
@@ -9,6 +13,9 @@ export default function Page() {
   function handleToggle() {
     setToggle(!toggle);
   }
+  // if (toggle) {
+  //   document.body.height = `200000px`;
+  // }
 
   return (
     <Layout>
@@ -20,52 +27,41 @@ export default function Page() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <section className='container vh'>
-          <h1>Contact</h1>
-          <h4 className='contact-title'>
-            Email:{'  '}
+        <section className='container vh contact'>
+          <h1>Get in contact with me.</h1>
+
+          <div>
             <a
               target='__blank'
               rel='noreferrer'
               href='mailto: jules.odea@gmail.com'
+              className='email'
             >
               jules.odea@gmail.com
             </a>
-          </h4>
-          <h4 className='contact-title'>
-            Github:{'  '}
+          </div>
+
+          <div className='icon-container'>
             <a
               href='https://github.com/julesodea'
               target='__blank'
               rel='noreferrer'
             >
-              https://github.com/julesodea
+              <Github />
             </a>
-          </h4>
-          <h4 className='contact-title'>
-            LinkedIn:{'  '}
+
             <a
               href='https://linkedin.com/in/julesodea'
               target='__blank'
               rel='noreferrer'
             >
-              www.linkedin.com/in/julesodea
+              <LinkedIn />
             </a>
-          </h4>
 
-          <button className='button' onClick={handleToggle}>
-            {toggle ? 'CLOSE' : 'VIEW CV'}
-          </button>
-          {toggle ? (
-            <embed
-              style={{ margin: '40px 0px' }}
-              src='../images/julesodea-cv.pdf'
-              width='100%'
-              height='100%'
-            />
-          ) : (
-            ''
-          )}
+            <a href='../images/julesodea-cv.pdf' target='_blank'>
+              <CV />
+            </a>
+          </div>
         </section>
       </motion.div>
     </Layout>

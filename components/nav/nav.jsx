@@ -40,7 +40,7 @@ export default function Nav() {
     <nav className={`nav`}>
       <div className='menu-container'>
         <Link href='/'>
-          <a>JULES.</a>
+          <a className='title'>JULES.</a>
         </Link>
         <button
           aria-label='menubar'
@@ -57,12 +57,12 @@ export default function Nav() {
         <ul className='web'>
           <li>
             <Link href='/projects'>
-              <a>Posts</a>
+              <a className='web-links'>Work</a>
             </Link>
           </li>
           <li>
             <Link href='/contact'>
-              <a>contact</a>
+              <a className='web-links'>contact</a>
             </Link>
           </li>
         </ul>

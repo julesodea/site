@@ -1,3 +1,8 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .contact-title {
   margin: 10px 0;
   color: rgb(27, 27, 27);
@@ -7,4 +12,17 @@
     color: rgb(75, 75, 75);
     font-weight: 400;
   }
+}
+a.email {
+  padding-left: 5px;
+}
+.icon-container {
+  padding-top: 20px;
+
+  a {
+    padding-right: 20px;
+  }
+}
+embed {
+  height: 100%;
 }
