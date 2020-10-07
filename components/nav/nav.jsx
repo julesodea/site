@@ -42,7 +42,7 @@ export default function Nav() {
         <Link href='/'>
           <a className='title'>JULES.</a>
         </Link>
-        <button
+        {/* <button
           aria-label='menubar'
           className={`menubar`}
           onClick={handleClick}
@@ -52,7 +52,7 @@ export default function Nav() {
           <div
             className={toggled ? `menubar-bottom toggled` : `menubar-bottom`}
           />
-        </button>
+        </button> */}
 
         <ul className='web'>
           <li>
@@ -68,7 +68,7 @@ export default function Nav() {
         </ul>
       </div>
 
-      <div className={`mobile-menu ${toggled ? 'open' : ''}`}>
+      {/* <div className={`mobile-menu ${toggled ? 'open' : ''}`}>
         {toggled ? (
           <ul className={`${toggled ? 'display' : ''}`}>
             <motion.div className='mobile-links'>
@@ -94,8 +94,8 @@ export default function Nav() {
           </ul>
         ) : (
           ''
-        )}
-      </div>
+        )} */}
+      {/* </div> */}
     </nav>
   );
 }

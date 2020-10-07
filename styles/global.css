@@ -12,6 +12,9 @@ body {
 
   -webkit-font-smoothing: antialiased;
 }
+main {
+  padding-top: 15vh;
+}
 
 * {
   padding: 0;

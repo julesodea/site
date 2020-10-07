@@ -5,10 +5,14 @@ $primary-font: #252525;
   overflow: hidden !important;
 }
 .nav {
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
   height: 10vh;
+  background-color: #fdfdfd;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
+  z-index: 999;
 }
 .menu-container {
   width: 80%;
@@ -39,7 +43,7 @@ $primary-font: #252525;
   }
 
   @media only screen and (min-width: 900px) {
-    display: none;
+    // display: none;
   }
 }
 .menubar-top {
@@ -133,7 +137,7 @@ ul.web {
     }
   }
   @media only screen and (max-width: 900px) {
-    display: none;
+    // display: none;
   }
 }
 a.title {
