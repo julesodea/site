@@ -11,8 +11,8 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link href='/page'>
-              <a>Posts</a>
+            <Link href='/projects'>
+              <a>Work</a>
             </Link>
           </li>
           <li>
