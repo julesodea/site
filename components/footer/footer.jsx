@@ -21,7 +21,7 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <span>logo</span>
+        <a className='title'>O'DEA.</a>
       </div>
     </footer>
   );

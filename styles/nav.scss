@@ -4,15 +4,22 @@ $primary-font: #252525;
 .overflow {
   overflow: hidden !important;
 }
-.nav {
-  position: fixed;
+nav {
   width: 100%;
   display: flex;
   align-items: center;
   height: 10vh;
   background-color: #fdfdfd;
-  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
   z-index: 999;
+  transition: all 1s ease;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
+  // &.fixed {
+  //   position: fixed;
+  //   top: 0;
+  //   // height: 20vh;
+  //   box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 12px;
+  // }
 }
 .menu-container {
   width: 80%;

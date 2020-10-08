@@ -1,9 +1,27 @@
+import { useState, useEffect } from 'react';
+
 import Head from 'next/head';
 import Nav from '../nav/nav';
+import Footer from '../footer/footer';
 
 export const siteTitle = 'Jules ';
 
-export default function Layout({ children, home, post }) {
+export default function Layout({ children, home, contact }) {
+  // const [scroll, setScroll] = useState(false);
+
+  // useEffect(() => {
+  //   document.addEventListener(
+  //     'scroll',
+  //     () => {
+  //       const scrollCheck = window.scrollY < '150';
+  //       if (scrollCheck !== scroll) {
+  //         setScroll(scrollCheck);
+  //         console.log(scroll);
+  //       }
+  //     },
+  //     []
+  //   );
+  // });
   return (
     <>
       <Head>
@@ -22,8 +40,10 @@ export default function Layout({ children, home, post }) {
         <meta name='twitter:card' content='summary_large_image' />
       </Head>
       <Nav />
+
       <main>{children}</main>
-      {/* {!home ? <Footer /> : null} */}
+      {!home ? <Footer /> : null}
+      {/* <Footer /> */}
     </>
   );
 }

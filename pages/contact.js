@@ -15,7 +15,7 @@ export default function Page() {
   }
 
   return (
-    <Layout>
+    <Layout contact>
       <Head>
         <title>{`${siteTitle} ❘ ${pageName}`}</title>
       </Head>
@@ -24,7 +24,7 @@ export default function Page() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       >
-        <section className='container vh contact'>
+        <section className='container vh contact' style={{ height: '90vh' }}>
           <h1 className='contact-heading'>Get in contact with me.</h1>
 
           <div>

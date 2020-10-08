@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
@@ -18,14 +18,7 @@ const item = {
 };
 
 export default function Nav() {
-  const [toggled, setToggle] = useState(false);
-
-  function handleClick() {
-    setToggle(!toggled);
-    !toggled
-      ? document.body.classList.add('overflow')
-      : document.body.classList.remove('overflow');
-  }
+  const [toggled, setToggle] = useState();
 
   function menuClose(e) {
     e.stopPropagation();
@@ -37,7 +30,7 @@ export default function Nav() {
   }
 
   return (
-    <nav className={`nav`}>
+    <nav>
       <div className='menu-container'>
         <Link href='/'>
           <a className='title'>JULES.</a>

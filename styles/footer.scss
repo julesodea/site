@@ -1,9 +1,11 @@
 footer {
-  background: #f3f3f3;
+  background: #fdfdfd;
   height: 20vh;
+  display: flex;
+  bottom: 0;
   .footer-container {
     height: 100%;
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -14,7 +16,7 @@ footer {
       align-items: center;
       li {
         a {
-          color: rgb(173, 173, 173);
+          color: rgb(92, 92, 92);
           padding-right: 10px;
           font-size: 14px;
           &::after {
