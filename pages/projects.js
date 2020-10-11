@@ -23,7 +23,7 @@ export default function Page({ allPostsData }) {
           <h4 className='subheading'>Recent Work</h4>
           <ul className='grid'>
             {allPostsData.map(({ id, title, featuredImage, subtitle }) => (
-              <Link href='/posts/[id]' as={`/posts/${id}`} key={id}>
+              <Link href='/projects/[id]' as={`/projects/${id}`} key={id}>
                 <a>
                   <li className='item'>
                     <img src={featuredImage} alt='' loading='lazy' />

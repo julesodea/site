@@ -3,7 +3,6 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 import Head from 'next/head';
 import Layout, { siteTitle } from '../../components/layout/layout';
 import { motion } from 'framer-motion';
-import Menu from '../../components/menu/menu';
 import { useEffect, useState } from 'react';
 
 export default function Post({ postData }) {
@@ -56,13 +55,13 @@ export default function Post({ postData }) {
             <h2>Development</h2>
             <p>{postData.summarytwo}</p>
           </article>
-          <div className='links'>
+          <div className='links bottom'>
             <Link href='/projects'>
               <a className='back-button'>← Back to posts</a>
             </Link>
           </div>
         </div>
-        {/* {!scroll ? <Menu /> : null} */}
+
       </motion.div>
     </Layout>
   );
