@@ -6,29 +6,15 @@ import Footer from '../footer/footer';
 
 export const siteTitle = 'Jules ';
 
-export default function Layout({ children, home, contact }) {
-  // const [scroll, setScroll] = useState(false);
+export default function Layout({ children, home }) {
 
-  // useEffect(() => {
-  //   document.addEventListener(
-  //     'scroll',
-  //     () => {
-  //       const scrollCheck = window.scrollY < '150';
-  //       if (scrollCheck !== scroll) {
-  //         setScroll(scrollCheck);
-  //         console.log(scroll);
-  //       }
-  //     },
-  //     []
-  //   );
-  // });
   return (
     <>
       <Head>
         <link rel='icon' href='/favicon.ico' />
         <meta
           name='description'
-          content='Learn how to build a personal website using Next.js'
+          content="Jules O'Dea Portfolio Web / Front End Development"
         />
         <meta
           property='og:image'
@@ -43,7 +29,7 @@ export default function Layout({ children, home, contact }) {
 
       <main>{children}</main>
       {!home ? <Footer /> : null}
-      {/* <Footer /> */}
+
     </>
   );
 }

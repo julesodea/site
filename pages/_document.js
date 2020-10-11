@@ -14,7 +14,7 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap'
             rel='stylesheet'
           />
-          <meta name="description" content="Jules O'Dea Portfolio Web / Front End Development"></meta>
+
         </Head>
         <body>
           <Main />
