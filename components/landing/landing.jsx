@@ -5,8 +5,7 @@ export default function Landing() {
     <section className='container flex height landing' style={{}}>
       <h1 className='title'>Hello! I'm Jules.</h1>
       <p className='subtitle'>
-        I am creating a new website. This is a small blurb I haven't come up
-        with yet.
+        I create modern applications for both mobile and web.
       </p>
       <Link href='/projects'>
         <a className='landing-button'>Recent Work</a>
