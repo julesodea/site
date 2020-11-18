@@ -4,7 +4,7 @@ date: "2019-06-17"
 title: "Black Estate"
 subtitle: "Redesign of a established Canterbury culinary icon in New Zealand"
 author: "odea"
-featuredImage: ../images/blackestate.jpg
+featuredImage: /images/blackestate.jpg
 summaryone: "Black Estate is an award winning winery in Canterbury, New Zealand. The task was to redesign their current website to a more user friendly website. I showcased the impressive restaurant in the landing page with the Canterbury hills in the background. Their wines are crafted by hand, as naturally
 as possible. They have received international and domestic acclaim both for the wine
 and the food offerings. Their restaurant opens for lunch and has won 2018 Cuisine

@@ -4,6 +4,7 @@ import Head from 'next/head';
 import Layout, { siteTitle } from '../../components/layout/layout';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function Post({ postData }) {
   const [scroll, setScroll] = useState(0);
@@ -47,10 +48,13 @@ export default function Post({ postData }) {
             </div>
             <h2>Key Points</h2>
             <p>{postData.summaryone}</p>
-            <img
+            <Image
               src={postData.featuredImage}
               alt={postData.title}
               loading='lazy'
+              width='1400'
+              layout='responsive'
+              height='800'
             />
             <h2>Development</h2>
             <p>{postData.summarytwo}</p>
@@ -61,7 +65,6 @@ export default function Post({ postData }) {
             </Link>
           </div>
         </div>
-
       </motion.div>
     </Layout>
   );

@@ -2,7 +2,7 @@ import Layout, { siteTitle } from '../components/layout/layout';
 import Head from 'next/head';
 import { getSortedPostsData } from '../lib/posts';
 import Link from 'next/link';
-
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const pageName = 'Projects';
@@ -26,7 +26,13 @@ export default function Page({ allPostsData }) {
               <Link href='/projects/[id]' as={`/projects/${id}`} key={id}>
                 <a>
                   <li className='item'>
-                    <img src={featuredImage} alt='' loading='lazy' />
+                    <Image
+                      src={featuredImage}
+                      alt='project-image'
+                      height='400'
+                      width='700'
+                      layout='responsive'
+                    />
                     <h2>{title}</h2>
                     <h5>{subtitle}</h5>
                   </li>
