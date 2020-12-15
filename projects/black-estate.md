@@ -11,7 +11,7 @@ and the food offerings. Their restaurant opens for lunch and has won 2018 Cuisin
 Winery Restaurant of the year with two hats. I wanted to try convey the restaurant in a enticing way which would make you really want to be there."
 summarytwo: "I wanted to implement a User Interface that is simple and easy to use while still showing off the class of the winery. "
 bodyImage: ../images/blackestate.png
-link: "https://julesodea.github.io/be/"
+link: "https://julesodea.github.io/black-estate/"
 link2: "https://jpo.netlify.com/files/blackestate.pdf"
 
 ---
